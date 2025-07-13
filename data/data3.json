@@ -1,0 +1,863 @@
+{
+  "entities": [
+    {
+      "id": 1,
+      "name": "Elbit Systems",
+      "logo": "logos/elbit.png",
+      "sector": "Military & Defense",
+      "country": "Israel",
+      "revenue": 5.9,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.35,
+      "relationships": [
+        {
+          "target": 2,
+          "type": "competitor"
+        },
+        {
+          "target": 3,
+          "type": "supplier"
+        },
+        {
+          "target": 15,
+          "type": "joint-venture"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Israel Aerospace Industries",
+      "logo": "logos/iai.png",
+      "sector": "Military & Defense",
+      "country": "Israel",
+      "revenue": 4.2,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.28,
+      "relationships": [
+        {
+          "target": 1,
+          "type": "competitor"
+        },
+        {
+          "target": 3,
+          "type": "technology-transfer"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Lockheed Martin",
+      "logo": "logos/lockheed.png",
+      "sector": "Military & Defense",
+      "country": "USA",
+      "revenue": 67.6,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.42,
+      "relationships": [
+        {
+          "target": 1,
+          "type": "client"
+        },
+        {
+          "target": 2,
+          "type": "joint-venture"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "IBM",
+      "logo": "logos/ibm.png",
+      "sector": "Technology",
+      "country": "USA",
+      "revenue": 61.9,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.18,
+      "relationships": [
+        {
+          "target": 5,
+          "type": "competitor"
+        },
+        {
+          "target": 6,
+          "type": "cloud-partner"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Hewlett Packard Enterprise",
+      "logo": "logos/hp.png",
+      "sector": "Technology",
+      "country": "USA",
+      "revenue": 29.1,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.12,
+      "relationships": [
+        {
+          "target": 4,
+          "type": "competitor"
+        },
+        {
+          "target": 2,
+          "type": "infrastructure-supplier"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Microsoft",
+      "logo": "logos/microsoft.png",
+      "sector": "Technology",
+      "country": "USA",
+      "revenue": 211.9,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.33,
+      "relationships": [
+        {
+          "target": 7,
+          "type": "competitor"
+        },
+        {
+          "target": 8,
+          "type": "cloud-competitor"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Google (Alphabet Inc)",
+      "logo": "logos/google.png",
+      "sector": "Technology",
+      "country": "USA",
+      "revenue": 307.4,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.38,
+      "relationships": [
+        {
+          "target": 6,
+          "type": "competitor"
+        },
+        {
+          "target": 8,
+          "type": "joint-venture"
+        },
+        {
+          "target": 11,
+          "type": "project"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Amazon",
+      "logo": "logos/amazon.png",
+      "sector": "Technology",
+      "country": "USA",
+      "revenue": 574.8,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.41,
+      "relationships": [
+        {
+          "target": 6,
+          "type": "competitor"
+        },
+        {
+          "target": 7,
+          "type": "joint-venture"
+        },
+        {
+          "target": 11,
+          "type": "project"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Project Nimbus",
+      "logo": "logos/nimbus.png",
+      "sector": "Government Cloud",
+      "country": "Israel",
+      "revenue": 1.2,
+      "revenueCurrency": "USD",
+      "revenueYear": 2024,
+      "marketDominance": 0.95,
+      "relationships": [
+        {
+          "target": 7,
+          "type": "provider"
+        },
+        {
+          "target": 8,
+          "type": "provider"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Palantir Technologies",
+      "logo": "logos/palantir.png",
+      "sector": "Surveillance",
+      "country": "USA",
+      "revenue": 2.2,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.65,
+      "relationships": [
+        {
+          "target": 1,
+          "type": "technology-supplier"
+        },
+        {
+          "target": 2,
+          "type": "data-analytics"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Leonardo S.p.A",
+      "logo": "logos/leonardo.png",
+      "sector": "Aerospace",
+      "country": "Italy",
+      "revenue": 15.3,
+      "revenueCurrency": "EUR",
+      "revenueYear": 2023,
+      "marketDominance": 0.22,
+      "relationships": [
+        {
+          "target": 3,
+          "type": "joint-venture"
+        },
+        {
+          "target": 15,
+          "type": "component-supplier"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Caterpillar Inc",
+      "logo": "logos/caterpillar.png",
+      "sector": "Heavy Machinery",
+      "country": "USA",
+      "revenue": 67.1,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.31,
+      "relationships": [
+        {
+          "target": 13,
+          "type": "competitor"
+        },
+        {
+          "target": 14,
+          "type": "competitor"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "HD Hyundai",
+      "logo": "logos/hyundai.png",
+      "sector": "Heavy Machinery",
+      "country": "South Korea",
+      "revenue": 58.9,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.27,
+      "relationships": [
+        {
+          "target": 12,
+          "type": "competitor"
+        },
+        {
+          "target": 20,
+          "type": "parent-company"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Volvo",
+      "logo": "logos/volvo.png",
+      "sector": "Heavy Machinery",
+      "country": "Sweden",
+      "revenue": 49.6,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.23,
+      "relationships": [
+        {
+          "target": 12,
+          "type": "competitor"
+        },
+        {
+          "target": 43,
+          "type": "joint-venture"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Chevron",
+      "logo": "logos/chevron.png",
+      "sector": "Energy",
+      "country": "USA",
+      "revenue": 213.2,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.19,
+      "relationships": [
+        {
+          "target": 22,
+          "type": "joint-venture"
+        },
+        {
+          "target": 24,
+          "type": "supplier"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Heidelberg Materials AG",
+      "logo": "logos/heidelberg.png",
+      "sector": "Construction",
+      "country": "Germany",
+      "revenue": 21.8,
+      "revenueCurrency": "EUR",
+      "revenueYear": 2023,
+      "marketDominance": 0.15,
+      "relationships": [
+        {
+          "target": 12,
+          "type": "client"
+        },
+        {
+          "target": 13,
+          "type": "client"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Booking.com",
+      "logo": "logos/booking.png",
+      "sector": "Tourism",
+      "country": "Netherlands",
+      "revenue": 21.4,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.62,
+      "relationships": [
+        {
+          "target": 18,
+          "type": "competitor"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Airbnb",
+      "logo": "logos/airbnb.png",
+      "sector": "Tourism",
+      "country": "USA",
+      "revenue": 9.9,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.38,
+      "relationships": [
+        {
+          "target": 17,
+          "type": "competitor"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "BNP Paribas",
+      "logo": "logos/bnp.png",
+      "sector": "Banking",
+      "country": "France",
+      "revenue": 50.6,
+      "revenueCurrency": "EUR",
+      "revenueYear": 2023,
+      "marketDominance": 0.11,
+      "relationships": [
+        {
+          "target": 20,
+          "type": "investor"
+        },
+        {
+          "target": 21,
+          "type": "investor"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Glencore",
+      "logo": "logos/glencore.png",
+      "sector": "Mining",
+      "country": "Switzerland",
+      "revenue": 255.8,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.25,
+      "relationships": [
+        {
+          "target": 15,
+          "type": "supplier"
+        },
+        {
+          "target": 25,
+          "type": "competitor"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Barclays",
+      "logo": "logos/barclays.png",
+      "sector": "Banking",
+      "country": "UK",
+      "revenue": 25.4,
+      "revenueCurrency": "GBP",
+      "revenueYear": 2023,
+      "marketDominance": 0.09,
+      "relationships": [
+        {
+          "target": 19,
+          "type": "competitor"
+        },
+        {
+          "target": 22,
+          "type": "investor"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Blackrock",
+      "logo": "logos/blackrock.png",
+      "sector": "Investment",
+      "country": "USA",
+      "revenue": 17.9,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.31,
+      "relationships": [
+        {
+          "target": 3,
+          "type": "investor"
+        },
+        {
+          "target": 6,
+          "type": "investor"
+        },
+        {
+          "target": 7,
+          "type": "investor"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Vanguard",
+      "logo": "logos/vanguard.png",
+      "sector": "Investment",
+      "country": "USA",
+      "revenue": 15.6,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.28,
+      "relationships": [
+        {
+          "target": 22,
+          "type": "competitor"
+        },
+        {
+          "target": 3,
+          "type": "investor"
+        },
+        {
+          "target": 12,
+          "type": "investor"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Drummond Company",
+      "logo": "logos/drummond.png",
+      "sector": "Mining",
+      "country": "USA",
+      "revenue": 3.8,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.07,
+      "relationships": [
+        {
+          "target": 20,
+          "type": "competitor"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "PIMCO (Allianz)",
+      "logo": "logos/pimco.png",
+      "sector": "Investment",
+      "country": "Germany/USA",
+      "revenue": 12.3,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.21,
+      "relationships": [
+        {
+          "target": 22,
+          "type": "competitor"
+        },
+        {
+          "target": 23,
+          "type": "competitor"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Jewish National Fund",
+      "logo": "logos/jnf.png",
+      "sector": "Non-Profit",
+      "country": "Israel",
+      "revenue": 0.5,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.95,
+      "relationships": [
+        {
+          "target": 27,
+          "type": "partner"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Israel Gives",
+      "logo": "logos/ig.png",
+      "sector": "Crowdfunding",
+      "country": "Israel",
+      "revenue": 0.012,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.85,
+      "relationships": [
+        {
+          "target": 26,
+          "type": "partner"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Tnuva",
+      "logo": "logos/tnuva.png",
+      "sector": "Agriculture",
+      "country": "Israel",
+      "revenue": 2.3,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.68,
+      "relationships": [
+        {
+          "target": 29,
+          "type": "supplier"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Netafim",
+      "logo": "logos/netafim.png",
+      "sector": "Agriculture",
+      "country": "Israel",
+      "revenue": 1.1,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.42,
+      "relationships": [
+        {
+          "target": 28,
+          "type": "client"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Ahava",
+      "logo": "logos/ahava.png",
+      "sector": "Cosmetics",
+      "country": "Israel",
+      "revenue": 0.15,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.12,
+      "relationships": []
+    },
+    {
+      "id": 31,
+      "name": "Actavis",
+      "logo": "logos/actavis.png",
+      "sector": "Pharmaceuticals",
+      "country": "Israel",
+      "revenue": 2.8,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.18,
+      "relationships": [
+        {
+          "target": 45,
+          "type": "competitor"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Strauss Group",
+      "logo": "logos/strauss.png",
+      "sector": "Food & Beverage",
+      "country": "Israel",
+      "revenue": 1.9,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.25,
+      "relationships": [
+        {
+          "target": 28,
+          "type": "competitor"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "SodaStream",
+      "logo": "logos/sodastream.png",
+      "sector": "Consumer Goods",
+      "country": "Israel",
+      "revenue": 0.6,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.55,
+      "relationships": []
+    },
+    {
+      "id": 34,
+      "name": "Teva Pharmaceutical",
+      "logo": "logos/teva.png",
+      "sector": "Pharmaceuticals",
+      "country": "Israel",
+      "revenue": 15.9,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.32,
+      "relationships": [
+        {
+          "target": 31,
+          "type": "parent-company"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Wix",
+      "logo": "logos/wix.png",
+      "sector": "Technology",
+      "country": "Israel",
+      "revenue": 1.4,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.08,
+      "relationships": [
+        {
+          "target": 6,
+          "type": "partner"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Mobileye",
+      "logo": "logos/mobileye.png",
+      "sector": "Autonomous Vehicles",
+      "country": "Israel",
+      "revenue": 1.7,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.21,
+      "relationships": [
+        {
+          "target": 43,
+          "type": "supplier"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Check Point Software",
+      "logo": "logos/checkpoint.png",
+      "sector": "Cybersecurity",
+      "country": "Israel",
+      "revenue": 2.5,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.14,
+      "relationships": [
+        {
+          "target": 10,
+          "type": "competitor"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Fiverr",
+      "logo": "logos/fiverr.png",
+      "sector": "Freelance Platform",
+      "country": "Israel",
+      "revenue": 0.3,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.12,
+      "relationships": []
+    },
+    {
+      "id": 39,
+      "name": "Monday.com",
+      "logo": "logos/monday.png",
+      "sector": "SaaS",
+      "country": "Israel",
+      "revenue": 0.5,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.09,
+      "relationships": []
+    },
+    {
+      "id": 40,
+      "name": "Toyota",
+      "logo": "logos/toyota.png",
+      "sector": "Automotive",
+      "country": "Japan",
+      "revenue": 275.4,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.22,
+      "relationships": [
+        {
+          "target": 36,
+          "type": "investor"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Unilever",
+      "logo": "logos/unilever.png",
+      "sector": "Consumer Goods",
+      "country": "UK/Netherlands",
+      "revenue": 60.1,
+      "revenueCurrency": "EUR",
+      "revenueYear": 2023,
+      "marketDominance": 0.17,
+      "relationships": [
+        {
+          "target": 32,
+          "type": "investor"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Pepsico",
+      "logo": "logos/pepsi.png",
+      "sector": "Food & Beverage",
+      "country": "USA",
+      "revenue": 86.4,
+      "revenueCurrency": "USD",
+      "revenueYear": 2023,
+      "marketDominance": 0.24,
+      "relationships": [
+        {
+          "target": 33,
+          "type": "distributor"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Volkswagen",
+      "logo": "logos/volkswagen.png",
+      "sector": "Automotive",
+      "country": "Germany",
+      "revenue": 295.8,
+      "revenueCurrency": "EUR",
+      "revenueYear": 2023,
+      "marketDominance": 0.19,
+      "relationships": [
+        {
+          "target": 36,
+          "type": "client"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Siemens",
+      "logo": "logos/siemens.png",
+      "sector": "Industrial Conglomerate",
+      "country": "Germany",
+      "revenue": 77.8,
+      "revenueCurrency": "EUR",
+      "revenueYear": 2023,
+      "marketDominance": 0.15,
+      "relationships": [
+        {
+          "target": 1,
+          "type": "supplier"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Ratiopharm",
+      "logo": "logos/ratiopharm.png",
+      "sector": "Pharmaceuticals",
+      "country": "Germany",
+      "revenue": 3.2,
+      "revenueCurrency": "EUR",
+      "revenueYear": 2023,
+      "marketDominance": 0.11,
+      "relationships": [
+        {
+          "target": 31,
+          "type": "competitor"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "source": "UN Human Rights Council Report A/HRC/59/23",
+    "year": 2025,
+    "currencyConversionNote": "All financials reported in native currencies",
+    "marketDominanceScale": "0-1 where 1 = complete market control"
+  }
+}
