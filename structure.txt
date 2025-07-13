@@ -1,0 +1,15 @@
+/your-repo
+│── index.html
+│── data/
+│   ├── entities.json
+│   ├── relationships.json
+│   ├── metadata.json
+│   ├── timeline.json  # New timeline data
+│── js/
+│   ├── app.js
+│   ├── vis-network.min.js
+│   ├── html2canvas.min.js  # For export
+│── css/
+│   ├── styles.css
+│── assets/
+│   ├── sector-icons/  # Optional icons

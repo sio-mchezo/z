@@ -1,0 +1,419 @@
+{
+  "DEF-ISR-ELBIT": {
+    "core": {
+      "name": "Elbit Systems",
+      "sector": "Military & Defense",
+      "country": "Israel",
+      "description": "Israeli defense technology company specializing in military electronics and cyber warfare",
+      "foundingYear": 1966,
+      "bdsStatus": {
+        "listed": true,
+        "since": 2009,
+        "reasons": [
+          "Provides surveillance systems for Israeli apartheid wall",
+          "Supplies weapons used in attacks on Gaza",
+          "Test weapons on Palestinian civilians"
+        ],
+        "actionsRecommended": [
+          "Divestment",
+          "Exclusion from public contracts",
+          "Consumer boycott"
+        ],
+        "sources": [
+          "https://bdsmovement.net/act-now-against-elbit-systems",
+          "https://whoprofits.org/company/elbit-systems/"
+        ]
+      }
+    },
+    "financials": {
+      "revenue": {
+        "2023": 5.9,
+        "2022": 5.4,
+        "currency": "USD"
+      },
+      "marketDominance": 0.35
+    },
+    "tags": ["aerospace", "surveillance", "drones", "bds-listed"]
+  },
+  "DEF-ISR-IAI": {
+    "core": {
+      "name": "Israel Aerospace Industries",
+      "sector": "Military & Defense",
+      "country": "Israel",
+      "description": "State-owned aerospace and defense manufacturer",
+      "bdsStatus": {
+        "listed": true,
+        "since": 2014,
+        "reasons": [
+          "Produces military aircraft used in attacks on Gaza",
+          "Provides surveillance technology for illegal settlements"
+        ],
+        "actionsRecommended": [
+          "Divestment",
+          "Exclusion from aerospace partnerships"
+        ],
+        "sources": [
+          "https://bdsmovement.net/israel-aerospace-industries"
+        ]
+      }
+    },
+    "financials": {
+      "revenue": {
+        "2023": 4.2,
+        "currency": "USD"
+      },
+      "marketDominance": 0.28
+    },
+    "tags": ["bds-listed"]
+  },
+  "DEF-USA-LMT": {
+    "core": {
+      "name": "Lockheed Martin",
+      "sector": "Military & Defense",
+      "country": "USA",
+      "description": "Global aerospace and defense technology company",
+      "bdsStatus": {
+        "listed": true,
+        "since": 2016,
+        "reasons": [
+          "Major supplier of F-35 jets to Israel",
+          "Provides technology used in attacks on Gaza"
+        ],
+        "actionsRecommended": [
+          "Divestment campaigns",
+          "Protest arms fairs"
+        ],
+        "sources": [
+          "https://bdsmovement.net/lockheed-martin"
+        ]
+      }
+    },
+    "financials": {
+      "revenue": {
+        "2023": 67.6,
+        "currency": "USD"
+      },
+      "marketDominance": 0.42
+    },
+    "tags": ["bds-listed"]
+  },
+  "TECH-USA-IBM": {
+    "core": {
+      "name": "IBM",
+      "sector": "Technology",
+      "country": "USA",
+      "bdsStatus": {
+        "listed": true,
+        "since": 2018,
+        "reasons": [
+          "Provides technology to Israeli military",
+          "Works with Israeli government on surveillance projects"
+        ],
+        "actionsRecommended": [
+          "Consumer boycott",
+          "Tech worker protests"
+        ],
+        "sources": [
+          "https://bdsmovement.net/IBM"
+        ]
+      }
+    },
+    "financials": {
+      "revenue": {
+        "2023": 61.9,
+        "currency": "USD"
+      },
+      "marketDominance": 0.18
+    },
+    "tags": ["bds-listed"]
+  },
+  "GOV-ISR-NIMBUS": {
+    "core": {
+      "name": "Project Nimbus",
+      "sector": "Government Cloud",
+      "country": "Israel",
+      "bdsStatus": {
+        "listed": true,
+        "since": 2021,
+        "reasons": [
+          "$1.2 billion cloud project for Israeli military and government",
+          "Enables surveillance of Palestinians"
+        ],
+        "actionsRecommended": [
+          "Tech worker organizing",
+          "Shareholder resolutions"
+        ],
+        "sources": [
+          "https://bdsmovement.net/no-tech-for-apartheid"
+        ]
+      }
+    },
+    "financials": {
+      "revenue": {
+        "2024": 1.2,
+        "currency": "USD"
+      },
+      "marketDominance": 0.95
+    },
+    "tags": ["bds-listed", "google", "amazon"]
+  },
+  "SURV-USA-PLTR": {
+    "core": {
+      "name": "Palantir Technologies",
+      "sector": "Surveillance",
+      "country": "USA",
+      "bdsStatus": {
+        "listed": true,
+        "since": 2020,
+        "reasons": [
+          "Provides predictive policing software to Israeli military",
+          "Used in home demolitions and displacement"
+        ],
+        "actionsRecommended": [
+          "University divestment",
+          "Employee protests"
+        ],
+        "sources": [
+          "https://bdsmovement.net/palantir"
+        ]
+      }
+    },
+    "financials": {
+      "revenue": {
+        "2023": 2.2,
+        "currency": "USD"
+      },
+      "marketDominance": 0.65
+    },
+    "tags": ["bds-listed"]
+  },
+  "MACH-USA-CAT": {
+    "core": {
+      "name": "Caterpillar Inc",
+      "sector": "Heavy Machinery",
+      "country": "USA",
+      "bdsStatus": {
+        "listed": true,
+        "since": 2004,
+        "reasons": [
+          "Provides bulldozers used in home demolitions",
+          "Equipment used in settlement construction"
+        ],
+        "actionsRecommended": [
+          "Church divestment",
+          "Consumer boycott"
+        ],
+        "sources": [
+          "https://bdsmovement.net/caterpillar"
+        ]
+      }
+    },
+    "financials": {
+      "revenue": {
+        "2023": 67.1,
+        "currency": "USD"
+      },
+      "marketDominance": 0.31
+    },
+    "tags": ["bds-listed"]
+  },
+  "ENER-USA-CHV": {
+    "core": {
+      "name": "Chevron",
+      "sector": "Energy",
+      "country": "USA",
+      "bdsStatus": {
+        "listed": true,
+        "since": 2020,
+        "reasons": [
+          "Operates in occupied Golan Heights",
+          "Partners with Israeli energy companies"
+        ],
+        "actionsRecommended": [
+          "Fossil fuel divestment",
+          "Climate justice campaigns"
+        ],
+        "sources": [
+          "https://bdsmovement.net/chevron"
+        ]
+      }
+    },
+    "financials": {
+      "revenue": {
+        "2023": 213.2,
+        "currency": "USD"
+      },
+      "marketDominance": 0.19
+    },
+    "tags": ["bds-listed"]
+  },
+  "NPO-ISR-JNF": {
+    "core": {
+      "name": "Jewish National Fund",
+      "sector": "Non-Profit",
+      "country": "Israel",
+      "bdsStatus": {
+        "listed": true,
+        "since": 2012,
+        "reasons": [
+          "Complicit in ethnic cleansing",
+          "Funds settlement expansion",
+          "Destroys Palestinian villages"
+        ],
+        "actionsRecommended": [
+          "Charity donor awareness",
+          "Tax status challenges"
+        ],
+        "sources": [
+          "https://bdsmovement.net/jnf"
+        ]
+      }
+    },
+    "financials": {
+      "revenue": {
+        "2023": 0.5,
+        "currency": "USD"
+      },
+      "marketDominance": 0.95
+    },
+    "tags": ["bds-listed"]
+  },
+  "AGRI-ISR-TNV": {
+    "core": {
+      "name": "Tnuva",
+      "sector": "Agriculture",
+      "country": "Israel",
+      "bdsStatus": {
+        "listed": true,
+        "since": 2011,
+        "reasons": [
+          "Operates in illegal settlements",
+          "Profits from occupied land resources"
+        ],
+        "actionsRecommended": [
+          "Supermarket boycotts",
+          "Dairy alternatives promotion"
+        ],
+        "sources": [
+          "https://bdsmovement.net/tnuva"
+        ]
+      }
+    },
+    "financials": {
+      "revenue": {
+        "2023": 2.3,
+        "currency": "USD"
+      },
+      "marketDominance": 0.68
+    },
+    "tags": ["bds-listed"]
+  },
+  "AGRI-ISR-NET": {
+    "core": {
+      "name": "Netafim",
+      "sector": "Agriculture",
+      "country": "Israel",
+      "bdsStatus": {
+        "listed": true,
+        "since": 2015,
+        "reasons": [
+          "Water apartheid enabler",
+          "Denies Palestinians water access"
+        ],
+        "actionsRecommended": [
+          "Agricultural fair exclusions",
+          "Water justice campaigns"
+        ],
+        "sources": [
+          "https://bdsmovement.net/netafim"
+        ]
+      }
+    },
+    "financials": {
+      "revenue": {
+        "2023": 1.1,
+        "currency": "USD"
+      },
+      "marketDominance": 0.42
+    },
+    "tags": ["bds-listed"]
+  },
+  "TECH-USA-MSFT": {
+    "core": {
+      "name": "Microsoft",
+      "sector": "Technology",
+      "country": "USA",
+      "bdsStatus": {
+        "listed": false,
+        "note": "Under scrutiny for Azure cloud services in Israel"
+      }
+    },
+    "financials": {
+      "revenue": {
+        "2023": 211.9,
+        "currency": "USD"
+      },
+      "marketDominance": 0.33
+    }
+  },
+  "TECH-USA-GOOG": {
+    "core": {
+      "name": "Google (Alphabet Inc)",
+      "sector": "Technology",
+      "country": "USA",
+      "bdsStatus": {
+        "listed": true,
+        "since": 2021,
+        "reasons": [
+          "Project Nimbus participant",
+          "Provides AI to Israeli military"
+        ],
+        "actionsRecommended": [
+          "Tech worker walkouts",
+          "Consumer alternatives"
+        ],
+        "sources": [
+          "https://bdsmovement.net/no-tech-for-apartheid"
+        ]
+      }
+    },
+    "financials": {
+      "revenue": {
+        "2023": 307.4,
+        "currency": "USD"
+      },
+      "marketDominance": 0.38
+    },
+    "tags": ["bds-listed"]
+  },
+  "TECH-USA-AMZN": {
+    "core": {
+      "name": "Amazon",
+      "sector": "Technology",
+      "country": "USA",
+      "bdsStatus": {
+        "listed": true,
+        "since": 2021,
+        "reasons": [
+          "Project Nimbus participant",
+          "AWS services for Israeli military"
+        ],
+        "actionsRecommended": [
+          "Worker organizing",
+          "Consumer boycott"
+        ],
+        "sources": [
+          "https://bdsmovement.net/no-tech-for-apartheid"
+        ]
+      }
+    },
+    "financials": {
+      "revenue": {
+        "2023": 574.8,
+        "currency": "USD"
+      },
+      "marketDominance": 0.41
+    },
+    "tags": ["bds-listed"]
+  }
+}

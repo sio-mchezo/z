@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Corporate Network Visualization</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/vis-network.min.js"></script>
+  <script src="js/html2canvas.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="controls">
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Search companies...">
+      <select id="sector-filter">
+        <option value="">All Sectors</option>
+      </select>
+    </div>
+    <div class="timeline">
+      <input type="range" id="year-slider" min="2018" max="2025" value="2023">
+      <span id="year-display">2023</span>
+    </div>
+    <div class="export-buttons">
+      <button id="export-png"><i class="fas fa-image"></i> PNG</button>
+      <button id="export-svg"><i class="fas fa-file-code"></i> SVG</button>
+    </div>
+  </div>
+  
+  <div id="network-container">
+    <div id="mynetwork"></div>
+    <div id="node-info"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

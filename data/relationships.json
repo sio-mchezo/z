@@ -1,0 +1,115 @@
+{
+  "DEF-ISR-ELBIT": [
+    {"target": "DEF-ISR-IAI", "type": "competitor"},
+    {"target": "DEF-USA-LMT", "type": "supplier"},
+    {"target": "ENER-USA-CHV", "type": "joint-venture"}
+  ],
+  "DEF-ISR-IAI": [
+    {"target": "DEF-ISR-ELBIT", "type": "competitor"},
+    {"target": "DEF-USA-LMT", "type": "technology-transfer"}
+  ],
+  "DEF-USA-LMT": [
+    {"target": "DEF-ISR-ELBIT", "type": "client"},
+    {"target": "DEF-ISR-IAI", "type": "joint-venture"}
+  ],
+  "TECH-USA-IBM": [
+    {"target": "TECH-USA-HPE", "type": "competitor"},
+    {"target": "TECH-USA-MSFT", "type": "cloud-partner"}
+  ],
+  "TECH-USA-HPE": [
+    {"target": "TECH-USA-IBM", "type": "competitor"},
+    {"target": "DEF-ISR-IAI", "type": "infrastructure-supplier"}
+  ],
+  "TECH-USA-MSFT": [
+    {"target": "TECH-USA-GOOG", "type": "competitor"},
+    {"target": "TECH-USA-AMZN", "type": "cloud-competitor"}
+  ],
+  "TECH-USA-GOOG": [
+    {"target": "TECH-USA-MSFT", "type": "competitor"},
+    {"target": "TECH-USA-AMZN", "type": "joint-venture"},
+    {"target": "AERO-ITA-LDO", "type": "project"}
+  ],
+  "TECH-USA-AMZN": [
+    {"target": "TECH-USA-MSFT", "type": "competitor"},
+    {"target": "TECH-USA-GOOG", "type": "joint-venture"},
+    {"target": "AERO-ITA-LDO", "type": "project"}
+  ],
+  "GOV-ISR-NIMBUS": [
+    {"target": "TECH-USA-GOOG", "type": "provider"},
+    {"target": "TECH-USA-AMZN", "type": "provider"}
+  ],
+  "SURV-USA-PLTR": [
+    {"target": "DEF-ISR-ELBIT", "type": "technology-supplier"},
+    {"target": "DEF-ISR-IAI", "type": "data-analytics"}
+  ],
+  "AERO-ITA-LDO": [
+    {"target": "DEF-USA-LMT", "type": "joint-venture"},
+    {"target": "ENER-USA-CHV", "type": "component-supplier"}
+  ],
+  "MACH-USA-CAT": [
+    {"target": "MACH-KOR-HDH", "type": "competitor"},
+    {"target": "MACH-SWE-VOL", "type": "competitor"}
+  ],
+  "MACH-KOR-HDH": [
+    {"target": "MACH-USA-CAT", "type": "competitor"},
+    {"target": "MINING-CHE-GLN", "type": "parent-company"}
+  ],
+  "MACH-SWE-VOL": [
+    {"target": "MACH-USA-CAT", "type": "competitor"}
+  ],
+  "ENER-USA-CHV": [
+    {"target": "INVEST-USA-BLK", "type": "joint-venture"},
+    {"target": "MINING-USA-DRU", "type": "supplier"}
+  ],
+  "CONS-DEU-HDM": [
+    {"target": "MACH-USA-CAT", "type": "client"},
+    {"target": "MACH-KOR-HDH", "type": "client"}
+  ],
+  "TOUR-NLD-BKG": [
+    {"target": "TOUR-USA-ABNB", "type": "competitor"}
+  ],
+  "TOUR-USA-ABNB": [
+    {"target": "TOUR-NLD-BKG", "type": "competitor"}
+  ],
+  "BANK-FRA-BNP": [
+    {"target": "MINING-CHE-GLN", "type": "investor"},
+    {"target": "BANK-GBR-BARC", "type": "investor"}
+  ],
+  "MINING-CHE-GLN": [
+    {"target": "ENER-USA-CHV", "type": "supplier"},
+    {"target": "INVEST-DEU-PIM", "type": "competitor"}
+  ],
+  "BANK-GBR-BARC": [
+    {"target": "BANK-FRA-BNP", "type": "competitor"},
+    {"target": "INVEST-USA-BLK", "type": "investor"}
+  ],
+  "INVEST-USA-BLK": [
+    {"target": "DEF-USA-LMT", "type": "investor"},
+    {"target": "TECH-USA-MSFT", "type": "investor"},
+    {"target": "TECH-USA-GOOG", "type": "investor"}
+  ],
+  "INVEST-USA-VAN": [
+    {"target": "INVEST-USA-BLK", "type": "competitor"},
+    {"target": "DEF-USA-LMT", "type": "investor"},
+    {"target": "MACH-USA-CAT", "type": "investor"}
+  ],
+  "MINING-USA-DRU": [
+    {"target": "MINING-CHE-GLN", "type": "competitor"}
+  ],
+  "INVEST-DEU-PIM": [
+    {"target": "INVEST-USA-BLK", "type": "competitor"},
+    {"target": "INVEST-USA-VAN", "type": "competitor"}
+  ],
+  "NPO-ISR-JNF": [
+    {"target": "FUND-ISR-IG", "type": "partner"}
+  ],
+  "FUND-ISR-IG": [
+    {"target": "NPO-ISR-JNF", "type": "partner"}
+  ],
+  "AGRI-ISR-TNV": [
+    {"target": "AGRI-ISR-NET", "type": "supplier"}
+  ],
+  "AGRI-ISR-NET": [
+    {"target": "AGRI-ISR-TNV", "type": "client"}
+  ]
+}
