@@ -1,246 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Corporate Network Visualization</title>
-    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: #f5f5f5;
-        }
-        #network {
-            width: 100%;
-            height: 800px;
-            border: 1px solid #ddd;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .node-tooltip {
-            position: absolute;
-            background: white;
-            padding: 10px;
-            border-radius: 4px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-            pointer-events: none;
-            max-width: 300px;
-            z-index: 100;
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .legend {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-bottom: 20px;
-            justify-content: center;
-        }
-        .legend-item {
-            display: flex;
-            align-items: center;
-        }
-        .legend-color {
-            width: 20px;
-            height: 20px;
-            margin-right: 8px;
-            border-radius: 3px;
-        }
-    </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>list</title>
+	<style>
+		body {
+			background-color: #eee;
+			color: #333;
+			font-family: monospace;
+			width: 100%;;
+			height: 100%;
+		}
+		#content {
+			max-width: 400px;
+			margin: 0 auto;
+			font-size: 10px;
+		}
+
+		/* #content div {
+			background-color: #e2e2e2;
+			padding: 30px;
+			margin-top: 10px;
+			border-radius: 4px;
+		} */
+		#content div img {
+			max-width: 100px;
+			filter: grayscale(1) contrast(30) brightness(1);
+		}
+	</style>
 </head>
 <body>
-    <h1>Corporate Network in Occupied Palestinian Territories</h1>
-    
-    <div class="legend">
-        <div class="legend-item">
-            <div class="legend-color" style="background-color: #FF6B6B;"></div>
-            <span>Military & Defense</span>
-        </div>
-        <div class="legend-item">
-            <div class="legend-color" style="background-color: #4ECDC4;"></div>
-            <span>Technology</span>
-        </div>
-        <div class="legend-item">
-            <div class="legend-color" style="background-color: #FFD166;"></div>
-            <span>Industrial</span>
-        </div>
-        <div class="legend-item">
-            <div class="legend-color" style="background-color: #06D6A0;"></div>
-            <span>Energy</span>
-        </div>
-        <div class="legend-item">
-            <div class="legend-color" style="background-color: #118AB2;"></div>
-            <span>Financial</span>
-        </div>
-        <div class="legend-item">
-            <div class="legend-color" style="background-color: #073B4C;"></div>
-            <span>Other</span>
-        </div>
-    </div>
-    
-    <div id="network"></div>
-    <div id="node-tooltip" class="node-tooltip" style="display: none;"></div>
 
-    <script>
-        // Load JSON data
-        fetch('data/data.json')
-            .then(response => response.json())
-            .then(data => {
-                // Process data for vis.js
-                const nodes = [];
-                const edges = [];
-                const sectorColors = {
-                    "Military & Defense": "#FF6B6B",
-                    "Technology": "#4ECDC4",
-                    "Heavy Machinery": "#FFD166",
-                    "Construction": "#FFD166",
-                    "Industrial": "#FFD166",
-                    "Energy": "#06D6A0",
-                    "Banking": "#118AB2",
-                    "Investment": "#118AB2",
-                    "Financial": "#118AB2",
-                    "Tourism": "#073B4C",
-                    "Agriculture": "#073B4C",
-                    "Non-Profit": "#073B4C",
-                    "Crowdfunding": "#073B4C",
-                    "Government Cloud": "#073B4C",
-                    "Surveillance": "#073B4C",
-                    "Aerospace": "#073B4C"
-                };
+	<div id="content">
 
-                // Create nodes
-                data.entities.forEach(entity => {
-                    const revenueSize = Math.log(entity.revenue + 1) * 5;
-                    
-                    nodes.push({
-                        id: entity.id,
-                        label: entity.name,
-                        value: revenueSize,
-                        title: `
-                            <strong>${entity.name}</strong><br>
-                            Sector: ${entity.sector}<br>
-                            Country: ${entity.country}<br>
-                            Revenue: ${entity.revenue} ${entity.revenueCurrency}<br>
-                            Market Dominance: ${(entity.marketDominance * 100).toFixed(0)}%
-                        `,
-                        color: {
-                            background: sectorColors[entity.sector] || "#999",
-                            border: "#333",
-                            highlight: {
-                                background: sectorColors[entity.sector] || "#999",
-                                border: "#000"
-                            }
-                        },
-                        borderWidth: 2,
-                        shape: "dot",
-                        sector: entity.sector,
-                        revenue: entity.revenue
-                    });
+	</div>
 
-                    // Create edges (relationships)
-                    if (entity.relationships) {
-                        entity.relationships.forEach(rel => {
-                            edges.push({
-                                from: entity.id,
-                                to: rel.target,
-                                label: rel.type.replace("-", " "),
-                                color: {
-                                    color: "#888",
-                                    highlight: "#555"
-                                },
-                                arrows: "to",
-                                smooth: {
-                                    type: "curvedCW",
-                                    roundness: 0.2
-                                }
-                            });
-                        });
-                    }
-                });
+<script>
+var url = 'data/data3.json';
+var req = new XMLHttpRequest();
+req.responseType = 'json';
+req.open('GET', url, true);
+req.onload  = function() {
+   var jsonResponse = req.response;
+   // do stuff..
+   create(jsonResponse)
+};
+req.send(null);
 
-                // Create the network
-                const container = document.getElementById("network");
-                const tooltip = document.getElementById("node-tooltip");
-                
-                const networkData = {
-                    nodes: nodes,
-                    edges: edges
-                };
-                
-                const options = {
-                    nodes: {
-                        scaling: {
-                            min: 10,
-                            max: 50
-                        },
-                        font: {
-                            size: 14,
-                            face: "Arial",
-                            color: "#333"
-                        }
-                    },
-                    edges: {
-                        width: 1.5,
-                        font: {
-                            size: 10,
-                            align: "middle"
-                        },
-                        arrowStrikethrough: false
-                    },
-                    physics: {
-                        barnesHut: {
-                            gravitationalConstant: -2000,
-                            centralGravity: 0.3,
-                            springLength: 200,
-                            springConstant: 0.04,
-                            damping: 0.09
-                        },
-                        minVelocity: 0.75
-                    },
-                    interaction: {
-                        hover: true,
-                        tooltipDelay: 200,
-                        hideEdgesOnDrag: true
-                    },
-                    layout: {
-                        improvedLayout: true
-                    }
-                };
-                
-                const network = new vis.Network(container, networkData, options);
-                
-                // Show custom tooltip
-                network.on("hoverNode", function(params) {
-                    const nodeId = params.node;
-                    const node = nodes.find(n => n.id === nodeId);
-                    if (node) {
-                        tooltip.innerHTML = node.title;
-                        tooltip.style.display = "block";
-                        tooltip.style.left = params.pointer.DOM.x + 10 + "px";
-                        tooltip.style.top = params.pointer.DOM.y + 10 + "px";
-                    }
-                });
-                
-                network.on("blurNode", function() {
-                    tooltip.style.display = "none";
-                });
-                
-                // Handle window resize
-                window.addEventListener("resize", function() {
-                    network.redraw();
-                });
-            })
-            .catch(error => {
-                console.error("Error loading JSON data:", error);
-                document.getElementById("network").innerHTML = 
-                    "<p style='color:red; text-align:center; padding:20px;'>Error loading data. Please check console for details.</p>";
-            });
-    </script>
+
+function create(arg){
+	arg.entities.forEach(entities => { 
+		//
+		var div = document.createElement("div");
+		document.getElementById("content").appendChild(div);
+
+		// title
+		var p = document.createElement("p");
+		p.innerHTML = entities.id +". "+ entities.name +" | "+ entities.sector +" | "+ entities.country;
+		div.appendChild(p);
+		// logo
+		var img = document.createElement("img");
+		img.src =  entities.logo;
+		div.appendChild(img);
+		
+	}); 
+}
+
+</script>
 </body>
 </html>
