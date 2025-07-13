@@ -1,4 +1,5 @@
 # z
 data on UN report (A/HRC/59/23)
 
-[link](https://sio-mchezo.github.io/z/list.html)
+[viz](https://sio-mchezo.github.io/z/list.html)
+[loop](https://sio-mchezo.github.io/z/img.html)
