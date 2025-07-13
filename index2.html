@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complicit in Genocide</title>
+    <style>
+    @font-face {
+        font-family: 'bebas';
+        src: url('font/bebas-regular-webfont.woff') format('woff'),
+        url('font/bebas-regular-webfont.woff2') format('woff2'),
+            url('font/bebas-regular.ttf')  format('truetype');
+    }
+    body {
+        font-family: 'bebas';
+        font-weight: 500;
+        font-style: normal;
+        background-color: #000;
+        color: #fff;
+        text-align:center;
+        overflow:hidden;
+    }
+    h1, h2, h3 {text-transform: uppercase;}
+    h1 {font-size: 40px;}
+    
+    html, body, .container {
+        height: 100%;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 9;
+    }
+    #cnt {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100%; 
+        margin: 0 auto;
+        z-index: 1; 
+        opacity: 0.5;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Complicit in Genocide</h1>
+    </div>
+    <div id="cnt"></div>
+
+
+    <script>
+        
+// img
+const imageURL = ["img/logo_0000_netafim.png",
+"img/logo_0001_tnuva.png",
+"img/logo_0002_israel-gives.png",
+"img/logo_0003_JNF.png",
+"img/logo_0004_pimco.png",
+"img/logo_0005_drummond.png",
+"img/logo_0006_vanguard.png",
+"img/logo_0007_blackrock.png",
+"img/logo_0008_barclays.png",
+"img/logo_0009_glencore.png",
+"img/logo_0010_paribas.png",
+"img/logo_0011_airbnb.png",
+"img/logo_0012_booking.png",
+"img/logo_0013_heidelberg.png",
+"img/logo_0014_chevron.png",
+"img/logo_0015_volvo.png",
+"img/logo_0016_hyundai.png",
+"img/logo_0017_cat.png",
+"img/logo_0018_leonardo.png",
+"img/logo_0019_palantir.png",
+"img/logo_0020_nimbus.png",
+"img/logo_0021_amazon.png",
+"img/logo_0022_google.png",
+"img/logo_0023_ms.png",
+"img/logo_0024_hp.png",
+"img/logo_0025_ibm.png",
+"img/logo_0026_lockheed.png",
+"img/logo_0027_IAI.png",
+"img/logo_0028_elbit.png",
+];
+
+var speed = 0.05;
+var num = 0;
+var images = [];
+var imageCount = 0;
+
+
+// add images to loaded func
+imageURL.forEach(src => { 
+  const image = new Image();
+  image.src = src;
+  image.onload = ()=>{ 
+    imageCount += 1;
+    if(imageCount === imageURL.length){ 
+     ready();
+   }
+ }
+ images.push(image); 
+}); 
+
+function ready(){
+    // canvas	
+    cnv = document.createElement('canvas');
+    cnv.width = 512;
+    cnv.height = cnv.width;
+    cnv.id = "cnv";
+    context = cnv.getContext('2d');
+    document.getElementById('cnt').appendChild( cnv );
+
+    context.drawImage(images[4], 0, 0, 1024, 1024, 0, 0, 512, 512);
+
+	animate(); 
+}
+ 
+
+/* render loop */
+function animate() {
+	num++;
+	xnum = Math.floor( ( num * speed ) % images.length ) ;
+    context.drawImage(images[xnum], 0, 0, 1024, 1024, 0, 0, 512, 512);
+    requestAnimationFrame( animate );
+} 
+ </script>
+</body>
+</html>
